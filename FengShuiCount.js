@@ -98,8 +98,8 @@ $(function() {
         var contentModal = '..';
         if(group){
             var mainRoll = FSRoll(mainAV + number);
-            var secondRoll = FSRoll(secondAV + number);
-            contentModal = foeLine.find(".name").val() + " has rolled : <em>" + mainRoll
+            var secondRoll = FSRoll(secondAV + number - 1);
+            contentModal = foeLine.find(".name").val() + " have rolled : <em>" + mainRoll
             contentModal = contentModal + "</em> for its main AV, and <em>" + secondAV + "</em> for its secondary AV";
         } else {
             var results = [];
@@ -172,7 +172,6 @@ $(function() {
                 }
             });
         }
-        //$('table#foe_table tr').first().insertAfter($('table#foe_table tr').last());
     }
 
     function compareFoes(firstFoe, secondFoe){

@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Language" content="en" />
+		<meta name="author" content="PY Lucas" />
+		<title>
+		    FengShui2 fight tracker
+		</title>
+        <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="dist/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="mainStyle.css">
+		<script src="jquery-2.1.1.min.js"></script>
+        <script src="dist/js/bootstrap.min.js"></script>
+		<script src="FengShuiCount.js"></script>
+	</head>
+	<body>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"><img src="fengshui_icon.png" alt="FengShui logo" id="gameLogo"></div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6"><h1>FengShui2 Fight Tracker</h1></div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <button id="addFeatFoe">Add a Featured Foe</button>
+                <button id="addMook">Add Mooks</button>
+                <button id="resetShots">Roll Initiative</button>
+            </div>
+            <br>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                Current Sequence <input id="seqCounter" type="number" value="0"/>
+            </div>
+            <div class="col-md-3">
+                Current Shot <input id="shotCounter" type="number" value="0"/>
+            </div>
+            <br><br><br>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
+                <table id="foe_table" class="mytable">
+                </table>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Roll result</h4>
+                    </div>
+                    <div id="popupModal" class="modal-body">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</body>
+</html>
