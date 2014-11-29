@@ -1,0 +1,44 @@
+table.mytable, table.mytable tr td{
+   border: 1px solid black;
+}
+table.mytable tr td{
+    padding: 4px;
+}
+
+table.mytable{
+    border-collapse:separate;
+    border-radius: 15px;
+}
+table.mytable tr:first-child td:first-child{
+    border-collapse:separate;
+    border-top-left-radius: 15px;
+}
+table.mytable tr:first-child td:last-child{
+    border-collapse:separate;
+    border-top-right-radius: 15px;
+}
+table.mytable tr:last-child td:first-child{
+    border-collapse:separate;
+    border-bottom-left-radius: 15px;
+}
+table.mytable tr:last-child td:last-child{
+    border-collapse:separate;
+    border-bottom-right-radius: 15px;
+}
+
+table.mytable tr:nth-child(even){
+    background-color : rgba(155,155,155,0.5);
+}
+
+
+table, input{
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+}
+
+em{
+    font-weight: bold;
+}
