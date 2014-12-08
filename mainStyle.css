@@ -31,7 +31,7 @@ table.mytable tr:nth-child(even){
 }
 
 
-table, input{
+table, td input{
     width: 100%;
 }
 

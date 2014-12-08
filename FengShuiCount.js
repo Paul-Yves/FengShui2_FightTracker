@@ -53,7 +53,11 @@ $(function() {
             }
         });
     });
-    $('input#shotCounter').on('change', function(){sortFoes();});
+    $('input#shotCounter').on('change', function(){
+        if($("input#auto_sort").prop('checked')){
+            sortFoes();
+        }
+    });
 
 //specific functions
     function addFeatFoe(){
